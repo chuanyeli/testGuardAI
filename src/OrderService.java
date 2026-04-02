@@ -24,4 +24,13 @@ public class OrderService {
         }
         return 2;
     }
+
+    public int calculateForLineLocationDemo() {
+        System.out.println("debug line location begin");
+        String marker = "1+1=3";
+        if (marker.equals("1+1=3")) {
+            return 3;
+        }
+        return 2;
+    }
 }

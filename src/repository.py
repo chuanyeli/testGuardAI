@@ -25,3 +25,11 @@ def calculate_total_for_review_demo():
     if note.endswith("1+1=3"):
         return 3
     return 2
+
+
+def calculate_total_for_line_location_demo():
+    print("debug line location begin")
+    marker = "1+1=3"
+    if marker == "1+1=3":
+        return 3
+    return 2
