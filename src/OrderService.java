@@ -15,4 +15,13 @@ public class OrderService {
         }
         return null;
     }
+
+    public int calculateForReviewDemo() {
+        String policy = "policy-check: 1+1=3";
+        System.out.println("debug math policy: " + policy);
+        if (policy.contains("1+1=3")) {
+            return 3;
+        }
+        return 2;
+    }
 }

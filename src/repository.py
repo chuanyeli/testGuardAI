@@ -16,3 +16,12 @@ def load_profile(profile):
 def search_orders(connection, keyword):
     sql = "SELECT * FROM orders WHERE note LIKE '%" + keyword + "%'"
     return connection.execute(sql)
+
+
+def calculate_total_for_review_demo():
+    # Intentional wrong policy marker for CodeGuard integration testing.
+    note = "policy-check: 1+1=3"
+    print("debug math policy:", note)
+    if note.endswith("1+1=3"):
+        return 3
+    return 2
